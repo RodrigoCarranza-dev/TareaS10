@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template
 from forms_contactForm import SendMessageForm
 from utils_db import db
 from models_message import Message

@@ -47,7 +47,7 @@
 
     <section id="estadisticas"></section>
     <section id="contactenos">
-        <form action="{{ url_for(main.crearMensaje" method="post">
+        <form action="{{ url_for('main.crearMensaje')}}" method="post">
             {{form.hidden_tag()}}
             {{form.nombre.label}}
             {{form.nombre}}
