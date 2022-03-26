@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from routes.messages import messages
-from routes.main import main
-from utils.db import db
+from routes_messages import messages
+from routes_main import main
+from utils_db import db
 
 app = Flask(__name__)
 

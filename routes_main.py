@@ -1,8 +1,7 @@
-import email
 from flask import Blueprint, render_template, redirect, url_for
-from forms.contactForm import SendMessageForm
-from utils.db import db
-from models.message import Message
+from forms_contactForm import SendMessageForm
+from utils_db import db
+from models_message import Message
 
 main = Blueprint("main", __name__, url_prefix="/")
 

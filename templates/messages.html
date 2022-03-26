@@ -10,5 +10,21 @@
 <body>
     <h1>BANDEJA DE ENTRADA</h1>
     
+    <table id="mensajes">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo electrónico</th>
+            <th>Mensaje</th>
+        </tr>
+        {% for mensaje in mensajes%}
+        <tr>
+            <td>{{mensaje['nombre']}}</td>
+            <td>{{mensaje['apellido']}}</td>
+            <td>{{mensaje['email']}}</td>
+            <td>{{mensaje['mensaje']}}</td>
+        </tr>
+        {% endfor%}
+    </table>
 </body>
 </html>

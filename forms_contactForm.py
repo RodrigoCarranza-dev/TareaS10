@@ -22,7 +22,6 @@ class SendMessageForm(FlaskForm):
         validators=[
             InputRequired("Por favor ingresa tu correo electrónico."),
             Length(min=5, max=60),
-            Email("Por favor, ingresa una dirección válida."),
         ],
         render_kw={"placeholder": "correo electrónico..."},
     )
