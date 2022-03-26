@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/baseStyle.css">
+
+    <title>España</title>
+</head>
+<body>
+    <section class="header" id="galeria">
+        <!-- The expanding image container -->
+        <div class="container">
+            <img  src="../static/css/images/1.jpg" alt="Madrid" id="expandedImg">
+        </div>
+
+        <div class="row">
+            <img src="../static/css/images/1.jpg" alt="Madrid" class="imagerow" onclick="changeImageFunctionjs('1')">
+            <img src="../static/css/images/2.jpg" alt="Barcelona" class="imagerow" onclick="changeImageFunctionjs('2')">
+            <img src="../static/css/images/3.jpeg" alt="Cantabria" class="imagerow" onclick="changeImageFunctionjs('3')">
+            <img src="../static/css/images/4.jpg" alt="Aragón" class="imagerow" onclick="changeImageFunctionjs('4')">
+        </div>
+
+    </section>
+
+
+
+<div id="navbar">
+  <a href="#inicio" id="inicio-btn" class="btn" onclick="activebutton('inicio-btn')">Inicio</a>
+  <a href="#estadisticas" id="estadisticas-btn" class="btn" onclick="activebutton('estadisticas-btn')">Estadísticas</a>
+  <a href="#contactenos" id="contactenos-btn" class="btn" onclick="activebutton('contactenos-btn')">Contáctenos</a>
+  <a href="#galeria" id="galeria-btn" class="btn" onclick="activebutton('galeria-btn')">Galería</a>
+  <a href="#about" id="about-btn" class="btn" onclick="activebutton('about-btn')">Sobre el programador</a>
+</div>
+
+<div class="content">
+    <section id="inicio">
+        <div class="fotodelrey">
+            <img src="../static/css/images/reyFelipe.jpg" alt="">
+        </div>
+        <div class="texto-inicio">
+            <p>El Rey, Felipe VI, proclamado el 19 de junio de 2014 para ostentar la jefatura del Estado y el mando supremo de las Fuerzas armadas, se complace en darle la bienvenida a este sitio. A través de este, queda usted cordialmente invitado a visitar los mejores destinos turísticos que se pueden encontrar en la Península Ibérica, dentro de España, algunos de los cuales se encuentran en la galería que puede observar en inicio de este sitio o haciendo clic en el botón "Galería" en la barra de navegación.</p>
+            <p>Esperamos que su estadía dentro de España deje en usted recuerdos de las mejores vacaciones, que su permanencia esté libre de todo inconveniente. ¡Que viva España!</p>
+        </div>
+    </section>
+
+    <section id="estadisticas"></section>
+    <section id="contactenos">
+        <form action="{{ url_for(main.crearMensaje" method="post">
+            {{form.hidden_tag()}}
+            {{form.nombre.label}}
+            {{form.nombre}}
+            {{form.apellido.label}}
+            {{form.apellido}}
+            {{form.email.label}}
+            {{form.email}}
+            {{form.message.label}}
+            {{form.message}}
+            <br>
+            {{form.submit}}
+        </form>
+    </section>
+    <section id="about">
+        
+    </section>
+</div>
+
+<script src="../static/js/baseScript.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    min-height: 310px;
+    height: calc(100vh - 60px);
+    padding-top: 10px;
+
+  }
+
+/* INICIO DE ESTILOS PARA GALERIA*/
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+#expandedImg{
+  width: auto;
+  max-width: 90%;
+  max-height: 450px;
+  max-height: 50vh;
+  margin-top: 20px;
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+.row img{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  opacity:0.8;
+  max-width: 70%;
+  margin: 5px;
+  border-radius: 15px;
+  transition: all linear 0.25s;
+}
+.row img:hover{
+  opacity: 1;
+  height: 45px;
+  width: 45px;
+}
+
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #970a0a;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
