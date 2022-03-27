@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/css/baseStyle.css">
-
+    <script src="https://kit.fontawesome.com/af84aa959a.js" crossorigin="anonymous"></script>
     <title>España</title>
 </head>
 <body>
     <section class="header" id="galeria">
-        <!-- The expanding image container -->
         <div class="container">
             <img  src="../static/css/images/1.jpg" alt="Madrid" id="expandedImg">
         </div>
@@ -35,7 +34,7 @@
 </div>
 
 <div class="content">
-    <section id="inicio">
+    <section class="section" id="inicio">
         <div class="fotodelrey">
             <img src="../static/css/images/reyFelipe.jpg" alt="">
         </div>
@@ -45,8 +44,25 @@
         </div>
     </section>
 
-    <section id="estadisticas"></section>
-    <section id="contactenos">
+    <section class="section" id="estadisticas">
+        <h2>ENERO 2022</h2>
+        <div class="data-container">
+            <div class="data">
+                <i class="fa-solid fa-person"></i>
+                <span>4.2 Millones de visitantes internacionales</span>
+            </div>
+            <div class="data">
+                <i class="fa-solid fa-plane-arrival"></i>
+                <span>14.6 Millones de viajes</span>
+            </div>
+            <div class="data">
+                <i class="fa-solid fa-hotel"></i>
+                <span>10.5 Millones de pernoctaciones hoteleras</span>
+            </div>
+        </div>
+    </section>
+    <section class="section formularito" id="contactenos">
+        <h2>CONTACTANOS</h2>
         <form action="{{ url_for('main.crearMensaje')}}" method="post">
             {{form.hidden_tag()}}
             {{form.nombre.label}}
@@ -55,17 +71,19 @@
             {{form.apellido}}
             {{form.email.label}}
             {{form.email}}
-            {{form.message.label}}
-            {{form.message}}
+            {{form.mensaje.label}}
+            {{form.mensaje}}
             {{form.submit}}
         </form>
     </section>
-    <section id="about">
-        
+    <section class="section" id="about">
+        <img src="../static/css/images/foto cv.jpg" alt="">
+        <p>Me caracterizo por orientarme a resultados; pero, a la vez, busco ser empático, leal y honesto. Poseo facilidad de aprendizaje y de trabajo en equipo. Siempre doy todo en cada una de mis experiencias.</p>        
     </section>
 </div>
 
 <script src="../static/js/baseScript.js"></script>
+<script src="https://kit.fontawesome.com/bfe61dead8.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -82,6 +82,10 @@ body {
   
   .content {
     padding: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
   
   .sticky {
@@ -93,4 +97,120 @@ body {
   .sticky + .content {
     padding-top: 60px;
   }
+
+.section {
+  width: 90%;
+  min-width: 200px;
+  margin: 10px 0;
+  background-color: #970a0a;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(17, 2, 2, 0.288);
+}
+#inicio{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.inicio div{
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  min-width: 80px;
+}
+.fotodelrey{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  min-width: 90px;
+}
+.fotodelrey img{
+  height: auto;
+  min-width: 50px;
+  border-radius: 10px;
+  max-width: 350px;
   
+}
+.texto-inicio{
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10 0 0 0;
+
+}
+.texto-inicio p{
+  font-size: 20px;
+  text-align: justify;
+  color: #f2f2f2;
+}
+#estadisticas{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#estadisticas h2{
+  color: #f2f2f2;
+  font-size: 30px;
+}
+.data-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+}
+.data{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 110px;
+  margin: 10px;
+}
+
+.data span{
+  color: #f2f2f2;
+  font-size: 15px;
+  text-align: center;
+}
+.formularito{
+  padding: 10px;
+}
+.formularito{
+  display: flex;
+  flex-direction: column;
+}
+.formularito h2{
+  font-size: 40px;
+  color: #f2f2f2;
+  width: 100%;
+  text-align: center;
+}
+#about{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+#about img{
+  margin: 10px;
+  border-radius: 100%;
+}
+#about p{
+  margin: 20px;
+  margin: 30px;
+  max-width: 600px;
+  text-align: center;
+}
