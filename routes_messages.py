@@ -1,5 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for
-from utils_db import db
+from flask import Blueprint, render_template
 from models_message import Message
 
 messages = Blueprint("messages", __name__, url_prefix="/messages")

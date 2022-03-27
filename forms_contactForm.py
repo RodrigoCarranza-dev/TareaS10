@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField, TextAreaField
-from wtforms.validators import InputRequired, Length, Email
+from wtforms.validators import InputRequired, Length
 
 
 class SendMessageForm(FlaskForm):

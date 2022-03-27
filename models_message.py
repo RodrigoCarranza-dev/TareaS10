@@ -15,5 +15,5 @@ class Message(db.Model):
 
 
     def __repr__(self) -> str:
-        return f"Messaje({self.id}, '{self.nombre}', '{self.apellido}', '{self.email}', '{self.mensaje}')"
+        return f"Message({self.id}, {self.nombre}, '{self.apellido}', '{self.email}' , '{self.mensaje}')"
     

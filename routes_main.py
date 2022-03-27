@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, redirect, render_template, url_for
 from forms_contactForm import SendMessageForm
 from utils_db import db
 from models_message import Message
@@ -16,4 +16,5 @@ def crearMensaje():
         nuevoregistro = Message(nombre, apellido, email, mensaje)
         db.session.add(nuevoregistro)
         db.session.commit()
+        return redirect(url_for("main.crearMensaje"))
     return render_template("main.html", form=form)
